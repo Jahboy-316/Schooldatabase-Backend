@@ -374,29 +374,7 @@ Rate limit: 20 requests per 15 minutes on register and login routes.
 
 > **Note on Teacher Access**: Teachers must have an active teacher profile created by an Admin (`POST /api/teachers`) with a matching email/userId to access teacher-restricted endpoints (such as viewing students or classes). If a user registered with role `teacher` attempts to access teacher endpoints before an Admin has created their teacher record, the request returns `403 Forbidden: "Teacher profile not found. An admin must create your teacher record first."`.
 
----
 
-## Running the API
-
-### 1. Install dependencies
-```bash
-npm install
-```
-
-### 2. Configure environment
-Create a `.env` file in the root folder:
-```env
-PORT=5000
-JWT_SECRET=your_secret_key
-```
-
-### 3. Start development server
-```bash
-npm run dev
-```
-
-### 4. Start production server
-```bash
 npm start
 ```
 
